@@ -3,11 +3,11 @@ package com.example.ko_logic
 //  Escribe un programa que calcule el factorial de un número.
 
 fun main() {
-    val num = -1
+    val num = 0
 
     when {
-        num == 0 -> println("El factorial de 0 es 1")
-        num > 0 -> println("El factorial de $num es : ${calcFactorial(num)}")
+        num == 0 || num == 1 -> println("El factorial de $num es 1")
+        num > 1 -> println("El factorial de $num es : ${calcFactorial(num)}")
         else -> println("($num) no es un valor válido")
     }
 }
